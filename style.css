@@ -1,0 +1,632 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f8f7f4;
+    color: #263746;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.header {
+    width: 100%;
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(248, 247, 244, 0.97);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    border-bottom: 1px solid #e5e2dc;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 40px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    object-position: left center;
+
+    display: block;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #435967;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #6d9bb4;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #dceaf0 0%,
+            transparent 35%
+        ),
+        #f8f7f4;
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.small-title {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    color: #7398aa;
+
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    color: #294a61;
+}
+
+.hero h2 span {
+    color: #7198ab;
+}
+
+.description {
+    max-width: 520px;
+
+    margin: 25px 0 30px;
+
+    color: #64737c;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #496f83;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #34576a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #7198ab;
+
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    color: #294a61;
+}
+
+.section-title span {
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #8db0bf;
+
+    margin: 15px auto 0;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.products {
+    padding: 100px 7%;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px 25px;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.product {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 25px rgba(38, 55, 70, 0.06);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(38, 55, 70, 0.10);
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.product-image {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #e8eef0;
+
+    cursor: pointer;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    color: #294a61;
+}
+
+.product-info p {
+    font-size: 12px;
+
+    color: #87939a;
+
+    margin: 3px 0 10px;
+}
+
+.product-info strong {
+    color: #496f83;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   PERSONALIZADAS
+========================= */
+
+.custom {
+    padding: 110px 10%;
+
+    background: #e5eef1;
+}
+
+.custom-content {
+    max-width: 600px;
+}
+
+.custom h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    color: #294a61;
+
+    margin-bottom: 20px;
+}
+
+.custom h2 span {
+    color: #7198ab;
+}
+
+.custom p:not(.small-title) {
+    color: #61727c;
+
+    max-width: 500px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact {
+    padding: 100px 7%;
+
+    text-align: center;
+}
+
+.contact > p {
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    color: #68767e;
+
+    font-size: 14px;
+}
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.contact-button {
+    padding: 12px 28px;
+
+    border: 1px solid #6f95a7;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: #496f83;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #496f83;
+
+    color: white;
+}
+
+
+/* =========================
+   VISOR DE IMÁGENES
+========================= */
+
+.image-viewer {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.94);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+.image-viewer.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.image-viewer img {
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   BOTÓN X
+========================= */
+
+.close-button {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.2s;
+}
+
+.close-button:hover {
+    transform: scale(1.15);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #294a61;
+
+    color: #dce6ea;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+
+    /* LOGO PEQUEÑO */
+
+    .logo {
+        width: 80px;
+        height: 35px;
+    }
+
+    .logo img {
+        max-width: 80px;
+        max-height: 35px;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    .hero {
+        min-height: 500px;
+
+        padding: 70px 25px;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+
+    .products {
+        padding: 75px 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        max-width: 450px;
+    }
+
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+
+    .custom {
+        padding: 80px 25px;
+    }
+
+    .custom h2 {
+        font-size: 43px;
+    }
+
+
+    .contact {
+        padding: 80px 25px;
+    }
+
+
+    .image-viewer {
+        padding: 20px;
+    }
+
+    .image-viewer img {
+        max-width: 95%;
+        max-height: 85%;
+    }
+
+}
