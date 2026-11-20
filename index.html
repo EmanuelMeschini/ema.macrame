@@ -1,806 +1,643 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ema.macrame | Pulseras de Macramé</title>
-
-    <!-- FAVICON -->
+    <title>ema.macrame | Pulseras artesanales</title>
     <link rel="icon" type="image/png" href="Imagenes/ema.macrame-logo.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
-        rel="stylesheet"
-    >
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- PANTALLA DE BIENVENIDA -->
+<div id="welcome-screen">
+    <div class="welcome-content">
+        <img
+            src="Imagenes/ema.macrame-logo.png"
+            alt="Logo ema.macrame"
+        >
+        <h2>ema.macrame</h2>
+        <p>Pequeños detalles, grandes significados</p>
+    </div>
+</div>
 
-    <!-- =========================
-         ENCABEZADO
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="header">
+        <a href="#inicio" class="logo">
+            <img src="Imagenes/ema.macrame-logo.png" alt="ema.macrame">
+        </a>
 
-        <div class="logo">
-
-            <img
-                src="Imagenes/ema.macrame-logo.png"
-                alt="ema.macrame"
-            >
-
-        </div>
-
-
-        <nav>
-
-            <a href="#inicio">
-                Inicio
-            </a>
-
-            <a href="#pulseras">
-                Pulseras
-            </a>
-
-            <a href="#personalizadas">
-                Personalizadas
-            </a>
-
-            <a href="#contacto">
-                Contacto
-            </a>
-
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#pulseras">Catálogo</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#personalizadas">Personalizadas</a>
+            <a href="#contacto">Contacto</a>
         </nav>
-
     </header>
 
 
-
-    <main>
-
-
-        <!-- =========================
-             INICIO
-        ========================== -->
-
-        <section
-            class="hero"
-            id="inicio"
-        >
-
-            <div class="hero-text">
-
-                <p class="small-title">
-                    HECHO A MANO
-                </p>
-
-
-                <h2>
-                    Pulseras de<br>
-                    <span>macramé</span>
-                </h2>
-
-
-                <p class="description">
-
-                    Pulseras hechas a mano, con dedicación y
-                    diferentes combinaciones de colores.
-
-                </p>
-
-
-                <a
-                    href="#pulseras"
-                    class="button"
-                >
-                    Ver pulseras
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             GALERÍA DE PULSERAS
-        ========================== -->
-
-        <section
-            class="products"
-            id="pulseras"
-        >
-
-
-            <div class="section-title">
-
-                <p>
-                    COLECCIÓN
-                </p>
-
-                <h2>
-                    Mis pulseras
-                </h2>
-
-                <span></span>
-
-            </div>
-
-
-
-            <div class="gallery">
-
-
-                <!-- PULSERA 01 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/01.JPG"
-                            alt="Pulsera de macramé 01"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 01
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 02 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/01 (2).JPG"
-                            alt="Pulsera de macramé 02"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 02
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 03 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/HDTO0166.JPG"
-                            alt="Pulsera de macramé 03"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 03
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 04 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/INNH3511.JPG"
-                            alt="Pulsera de macramé 04"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 04
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 05 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/IZDW2362.JPG"
-                            alt="Pulsera de macramé 05"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 05
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 06 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/01 (4).JPG"
-                            alt="Pulsera de macramé 06"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 06
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 07 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/ENUH6237.JPG"
-                            alt="Pulsera de macramé 07"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 07
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 08 -->
-
-                <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/117.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PULSERA 09 -->
-                  <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/LIQW2971.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                
-                <!-- PULSERA 10 -->
-                  <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/NIUR2306.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PULSERA 11 -->
-                  <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/AQZL0495.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-              
-                <!-- PULSERA 12 -->
-                  <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/VWIQ1054.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                
-                <!-- PULSERA 13 -->
-                  <article class="product">
-
-                    <div class="product-image">
-
-                        <img
-                            src="Imagenes/BOQV3090.JPG"
-                            alt="Pulsera de macramé 08"
-                            onclick="openImage(this)"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-
-                        <h3>
-                            Pulsera 08
-                        </h3>
-
-                        <p>
-                            Macramé artesanal
-                        </p>
-
-                        <strong>
-                            $0.000
-                        </strong>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PULSERA 14 -->
-
-        
-                <!-- PULSERA 15 -->
-
-            
-                <!-- PULSERA 16 -->
-
-            
-                <!-- PULSERA 17 -->
-
-               
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PERSONALIZADAS
-        ========================== -->
-
-        <section
-            class="custom"
-            id="personalizadas"
-        >
-
-            <div class="custom-content">
-
-                <p class="small-title">
-                    A TU MANERA
-                </p>
-
-
-                <h2>
-                    Pulseras<br>
-                    <span>personalizadas</span>
-                </h2>
-
-
-                <p>
-
-                    Elegí los colores y combinaciones que más te gusten.
-                    También puedo realizar diseños personalizados.
-
-                </p>
-
-
-                <a
-                    href="#contacto"
-                    class="button"
-                >
-                    Consultar
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACTO
-        ========================== -->
-
-        <section
-            class="contact"
-            id="contacto"
-        >
-
-            <div class="section-title">
-
-                <p>
-                    CONTACTO
-                </p>
-
-                <h2>
-                    ¿Te gustó alguna?
-                </h2>
-
-                <span></span>
-
-            </div>
-
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <p class="hero-small">HECHO A MANO CON DEDICACIÓN</p>
+
+            <h1>Pequeños detalles, grandes significados</h1>
 
             <p>
-
-                Escribime para consultar disponibilidad, precios
-                o pedir una pulsera personalizada.
-
+                Pulseras de macramé artesanales, elaboradas
+                con diferentes colores, técnicas y diseños.
             </p>
 
+            <a href="#pulseras" class="button">
+                Explorar colección
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section class="products" id="pulseras">
+
+        <div class="section-title">
+            <p>NUESTRA COLECCIÓN</p>
+            <h2>Catálogo de pulseras</h2>
+            <span>Encontrá el diseño que más te guste.</span>
+        </div>
+
+       <!-- FILTROS -->
+<div class="filters" id="filters">
+
+    <button class="filter-btn active" data-category="todos">
+        Todas
+    </button>
+
+    <button class="filter-btn" data-category="clasicas">
+        Clásicas
+    </button>
+
+    <button class="filter-btn" data-category="con-dijes">
+        Con dijes
+    </button>
+
+    <button class="filter-btn" data-category="especiales">
+        Especiales
+    </button>
+
+    <button class="filter-btn" data-category="premium">
+        Premium
+    </button>
+
+    <button class="filter-btn" data-category="pulseras-con-cuentas">
+        Pulseras con cuentas
+    </button>
+
+</div>
+
+        <!-- PRODUCTOS -->
+        <div class="gallery" id="gallery">
+
+            <!-- Los productos se generan desde JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMOCIONES -->
+    <section class="promotions" id="promociones">
+
+        <div class="section-title">
+            <p>PRECIOS ESPECIALES</p>
+            <h2>Promociones</h2>
+            <span>Llevate más de una y disfrutá de nuestros precios por cantidad.</span>
+        </div>
+
+        <div class="promotion-grid">
+
+            <article class="promotion-card">
+                <span>PACK X 2</span>
+                <h3>Dos pulseras</h3>
+                <p>Elegí dos modelos clásicos.</p>
+                <strong>$6.500</strong>
+            </article>
+
+            <article class="promotion-card featured">
+                <span>PACK X 3</span>
+                <h3>Tres pulseras</h3>
+                <p>Combiná tus colores favoritos.</p>
+                <strong>$9.000</strong>
+            </article>
+
+            <article class="promotion-card">
+                <span>PACK X 5</span>
+                <h3>Cinco pulseras</h3>
+                <p>Ideal para compartir con amigos.</p>
+                <strong>$14.000</strong>
+            </article>
+
+        </div>
+
+        <p class="promotion-note">
+            Promociones válidas para modelos clásicos seleccionados.
+        </p>
+
+    </section>
+
+
+    <!-- PERSONALIZADAS -->
+    <section class="custom" id="personalizadas">
+
+        <div class="custom-content">
+
+            <p class="section-label">UN DISEÑO ESPECIAL</p>
+
+            <h2>Creá tu propia pulsera</h2>
+
+            <p>
+                Elegí tus colores, combinaciones y detalles.
+                Podemos crear una pulsera especialmente para vos.
+            </p>
+
+            <a
+                href="https://wa.me/542996049884?text=Hola!%20Quisiera%20consultar%20por%20una%20pulsera%20personalizada."
+                target="_blank"
+                rel="noopener"
+                class="button">
+                Diseñar mi pulsera
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+
+        <div class="contact-content">
+
+            <p class="section-label">CONTACTO</p>
+
+            <h2>¿Encontraste tu favorita?</h2>
+
+            <p>
+                Escribime para consultar disponibilidad,
+                realizar un pedido o conocer más diseños.
+            </p>
 
             <div class="contact-buttons">
 
-                <a 
-                   href="https://wa.me/542996049884"
-                   class="contact-button"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >
+                <a
+                    href="https://wa.me/542996049884"
+                    target="_blank"
+                    rel="noopener"
+                    class="button">
                     WhatsApp
-            
                 </a>
-
 
                 <a
                     href="https://instagram.com/emanuel_meschini"
-                    class="contact-button"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener"
+                    class="button button-outline">
                     Instagram
                 </a>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
 
+    <!-- VISOR DE IMÁGENES -->
+    <div id="imageViewer" class="image-viewer">
 
-    <!-- =========================
-         VISOR DE IMÁGENES
-    ========================== -->
-
-    <div
-        id="imageViewer"
-        class="image-viewer"
-        onclick="closeImage(event)"
-    >
-
-        <button
-            class="close-button"
-            onclick="closeImage(event)"
-            aria-label="Cerrar"
-        >
+        <button id="closeViewer" class="close-button" aria-label="Cerrar">
             &times;
         </button>
 
+        <button id="prevImage" class="viewer-arrow viewer-prev" aria-label="Anterior">
+            &#10094;
+        </button>
 
-        <img
-            id="viewerImage"
-            src=""
-            alt="Pulsera ampliada"
-        >
+        <img id="viewerImage" src="" alt="Pulsera ampliada">
+
+        <button id="nextImage" class="viewer-arrow viewer-next" aria-label="Siguiente">
+            &#10095;
+        </button>
 
     </div>
 
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
-
-        <p>
-            © 2026 ema.macrame · Hecho a mano
-        </p>
-
+        <p>© 2026 ema.macrame · Pulseras hechas a mano</p>
+        <span>Hecho con dedicación 💙</span>
     </footer>
 
 
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
+    <!-- JAVASCRIPT -->
     <script>
 
-        function openImage(image) {
+        // ==================================
+        // PRODUCTOS
+        // ==================================
 
-            const viewer =
-                document.getElementById("imageViewer");
+        const products = [
 
-            const viewerImage =
-                document.getElementById("viewerImage");
+            {
+                name: "Modelo 01",
+                image: "Imagenes/Clasicas (4 o 6 hilos)/01 Clasica.JPG",
+                category: "clasicas",
+                categoryName: "Clásicas",
+                price: 4000,
+                description: "Pulsera artesanal de macramé."
+            },
 
-            viewerImage.src = image.src;
+            {
+                name: "Modelo 02",
+                image: "Imagenes/Clasicas (4 o 6 hilos)/02 Clasica.JPG",
+                category: "clasicas",
+                categoryName: "Clásicas",
+                price: 4000,
+                description: "Diseño artesanal con nudos."
+            },
 
-            viewer.classList.add("active");
+            {
+                name: "Modelo 03",
+                image: "Imagenes/Clasicas (4 o 6 hilos)/03 Clasica.JPG",
+                category: "clasicas",
+                categoryName: "Clásicas",
+                price: 4000,
+                description: "Diseño sencillo y delicado."
+            },
 
-            document.body.style.overflow = "hidden";
+            {
+                name: "Modelo 04",
+                image: "Imagenes/Especiales (8 a 10 hilos)/01 Especiales.JPG",
+                category: "especiales",
+                categoryName: "Diseños especiales",
+                price: 4500,
+                description: "Una combinación especial de colores."
+            },
+
+            {
+                name: "Modelo 05",
+                image: "Imagenes/Especiales (8 a 10 hilos)/02 Especiales.JPG",
+                category: "especiales",
+                categoryName: "Diseños especiales",
+                price: 4500,
+                description: "Pulsera tejida artesanalmente."
+            },
+
+            {
+                name: "Modelo 06",
+                image: "Imagenes/Especiales (8 a 10 hilos)/03 Especiales.JPG",
+                category: "especiales",
+                categoryName: "Diseños especiales",
+                price: 4500,
+                description: "Diseño artesanal de macramé."
+            },
+
+            {
+                name: "Modelo 07",
+                image: "Imagenes/Especiales (8 a 10 hilos)/04 Especiales.JPG",
+                category: "especiales",
+                categoryName: "Diseños especiales",
+                price: 4500,
+                description: "Diseño especial hecho a mano."
+            },
+
+            {
+                name: "Modelo 08",
+                image: "Imagenes/Especiales (8 a 10 hilos)/05 Especiales.JPG",
+                category: "especiales",
+                categoryName: "Diseños especiales",
+                price: 4500,
+                description: "Pulsera artesanal."
+            },
+
+            {
+                name: "Modelo 09",
+                image: "Imagenes/Con Dijes/01 Con dijes.JPG",
+                category: "con-dijes",
+                categoryName: "Con Dijes",
+                price: 4500,
+                description: "Un diseño diferente para tu colección."
+            },
+
+            {
+                name: "Modelo 10",
+                image: "Imagenes/Con Dijes/02 Con dijes.JPG",
+                category: "con-dijes",
+                categoryName: "Con Dijes",
+                price: 4500,
+                description: "Pulsera de hilo encerado."
+            },
+
+            {
+                name: "Modelo 11",
+                image: "Imagenes/Con Dijes/03 Con dijes.JPG",
+                category: "con-dijes",
+                categoryName: "Con Dijes",
+                price: 4500,
+                description: "Diseño artesanal con detalles."
+            },
+
+            {
+                name: "Modelo 12",
+                image: "Imagenes/Premium (12 hilos o mas)/01 Premium.JPG",
+                category: "premium",
+                categoryName: "Premium",
+                price: 4500,
+                description: "Pulsera premium de macramé."
+            },
+{
+    name: "Modelo 13",
+    image: "Imagenes/Pulseras con Cuentas/01 Pulsera Elastica.JPG",
+    category: "pulseras-con-cuentas",
+    categoryName: "Pulseras con cuentas",
+    price: 5500,
+    description: "Pulsera elástica con cuentas decorativas negras y separadores plateados."
+},
+
+            {
+                name: "Modelo 14",
+                image: "Imagenes/Pulseras con Cuentas/02 Pulsera Elastica.JPG",
+                category: "pulseras-con-cuentas",
+                categoryName: "Pulseras con Cuentas",
+                price: 5000,
+                description: "Pulsera elástica artesanal con cuentas decorativas."
+            },
+
+
+
+        ];
+
+
+        // ==================================
+        // ELEMENTOS
+        // ==================================
+
+        const gallery = document.getElementById("gallery");
+        const filters = document.getElementById("filters");
+
+        const imageViewer = document.getElementById("imageViewer");
+        const viewerImage = document.getElementById("viewerImage");
+
+        const closeViewer = document.getElementById("closeViewer");
+        const prevImage = document.getElementById("prevImage");
+        const nextImage = document.getElementById("nextImage");
+
+        let currentCategory = "todos";
+        let currentIndex = 0;
+        let visibleProducts = [];
+
+
+        // ==================================
+        // FORMATO DE PRECIOS
+        // ==================================
+
+        function formatPrice(price) {
+
+            return new Intl.NumberFormat("es-AR", {
+                style: "currency",
+                currency: "ARS",
+                maximumFractionDigits: 0
+            }).format(price);
+
         }
 
 
-        function closeImage(event) {
+        // ==================================
+        // MOSTRAR PRODUCTOS
+        // ==================================
 
-            if (
-                event.target.id === "imageViewer" ||
-                event.target.classList.contains("close-button")
-            ) {
+        function renderProducts() {
 
-                const viewer =
-                    document.getElementById("imageViewer");
+            visibleProducts = products.filter(product => {
 
-                viewer.classList.remove("active");
+                return currentCategory === "todos" ||
+                       product.category === currentCategory;
 
-                document.body.style.overflow = "auto";
+            });
+
+            gallery.innerHTML = "";
+
+            visibleProducts.forEach((product, index) => {
+
+                const card = document.createElement("article");
+
+                card.className = "product";
+
+                card.innerHTML = `
+
+                    <div class="product-image">
+                        <img
+                            src="${product.image}"
+                            alt="${product.name}"
+                            loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            ${product.categoryName}
+                        </span>
+
+                        <h3>${product.name}</h3>
+
+                        <p>${product.description}</p>
+
+                        <div class="product-bottom">
+
+                            <strong>${formatPrice(product.price)}</strong>
+
+                            <a
+                                href="https://wa.me/542996049884?text=${encodeURIComponent("Hola! Me interesa la pulsera " + product.name + " de " + formatPrice(product.price) + ". ¿Está disponible?")}"
+                                target="_blank"
+                                rel="noopener"
+                                class="buy-button">
+                                Consultar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+                card.querySelector(".product-image").addEventListener("click", () => {
+                    openGallery(index);
+                });
+
+                gallery.appendChild(card);
+
+            });
+
+            if (visibleProducts.length === 0) {
+
+                gallery.innerHTML = "<p class='no-products'>Próximamente nuevos diseños.</p>";
+
             }
 
         }
 
 
-        document.addEventListener("keydown", function(event) {
+        // ==================================
+        // FILTROS
+        // ==================================
 
-            if (event.key === "Escape") {
+        filters.addEventListener("click", event => {
 
-                const viewer =
-                    document.getElementById("imageViewer");
+            const button = event.target.closest(".filter-btn");
 
-                viewer.classList.remove("active");
+            if (!button) return;
 
-                document.body.style.overflow = "auto";
+            document.querySelectorAll(".filter-btn").forEach(btn => {
+                btn.classList.remove("active");
+            });
 
+            button.classList.add("active");
+
+            currentCategory = button.dataset.category;
+
+            renderProducts();
+
+        });
+
+
+        // ==================================
+        // VISOR DE IMÁGENES
+        // ==================================
+
+        function openGallery(index) {
+
+            currentIndex = index;
+
+            updateViewer();
+
+            imageViewer.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function updateViewer() {
+
+            const product = visibleProducts[currentIndex];
+
+            viewerImage.src = product.image;
+            viewerImage.alt = product.name;
+
+        }
+
+
+        function showNext() {
+
+            currentIndex++;
+
+            if (currentIndex >= visibleProducts.length) {
+                currentIndex = 0;
+            }
+
+            updateViewer();
+
+        }
+
+
+        function showPrevious() {
+
+            currentIndex--;
+
+            if (currentIndex < 0) {
+                currentIndex = visibleProducts.length - 1;
+            }
+
+            updateViewer();
+
+        }
+
+
+        function closeGallery() {
+
+            imageViewer.classList.remove("active");
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        closeViewer.addEventListener("click", closeGallery);
+
+        nextImage.addEventListener("click", showNext);
+
+        prevImage.addEventListener("click", showPrevious);
+
+
+        imageViewer.addEventListener("click", event => {
+
+            if (event.target === imageViewer) {
+                closeGallery();
             }
 
         });
 
+
+        viewerImage.addEventListener("click", event => {
+            event.stopPropagation();
+        });
+
+
+        // ==================================
+        // TECLADO
+        // ==================================
+
+        document.addEventListener("keydown", event => {
+
+            if (!imageViewer.classList.contains("active")) return;
+
+            if (event.key === "Escape") closeGallery();
+
+            if (event.key === "ArrowRight") showNext();
+
+            if (event.key === "ArrowLeft") showPrevious();
+
+        });
+
+
+        // ==================================
+        // INICIO
+        // ==================================
+
+        renderProducts();
+
+// ==================================
+// PANTALLA DE BIENVENIDA
+// ==================================
+
+window.addEventListener("load", () => {
+
+    const welcomeScreen = document.getElementById("welcome-screen");
+
+    setTimeout(() => {
+        welcomeScreen.classList.add("hide");
+    }, 2500);
+
+});
+
     </script>
 
-
 </body>
-
 </html>
